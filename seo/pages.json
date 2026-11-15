@@ -1,0 +1,29 @@
+[
+  {
+    "file": "index.html",
+    "path": "/",
+    "type": "home",
+    "title": "Cours d'espagnol en ligne avec Belén",
+    "ogTitle": "Cours d'espagnol en ligne pour francophones · Belén Payá",
+    "description": "Cours d'espagnol en ligne pour adultes francophones avec Belén Payá, professeure espagnole native. Débloque l'oral et parle avec confiance : voyage, belle-famille, travail. Appel découverte offert.",
+    "keywords": ["cours d'espagnol en ligne", "professeur d'espagnol natif", "cours d'espagnol pour adultes", "apprendre l'espagnol", "conversation espagnol en ligne"],
+    "published": "2026-11-15",
+    "modified": "2026-11-15",
+    "image": null,
+    "preloadImage": "/img/belen-professeure-espagnol.webp",
+    "breadcrumbs": [],
+    "course": true,
+    "faqSelector": "#faq details",
+    "speakable": ["#en-bref", "#faq"],
+    "videos": [
+      {"name": "Témoignage de Marie-Laure, élève de Belén Payá", "description": "Marie-Laure, élève francophone, raconte ses cours d'espagnol en ligne avec Belén.", "thumbnail": "/img/poster-temoignage-marie-laure.webp", "content": "/video/temoignage-marie-laure.mp4", "duration": "PT1M35S", "uploadDate": "2026-11-15"},
+      {"name": "Témoignage de Stéphane, élève de Belén Payá", "description": "Stéphane, élève francophone, parle de ses progrès en espagnol avec Belén.", "thumbnail": "/img/poster-temoignage-stephane.webp", "content": "/video/temoignage-stephane.mp4", "duration": "PT1M36S", "uploadDate": "2026-11-15"},
+      {"name": "Témoignage d'une élève de Belén Payá", "description": "Une élève francophone partage son expérience des cours d'espagnol en ligne avec Belén.", "thumbnail": "/img/poster-temoignage-eleve.webp", "content": "/video/temoignage-eleve.mp4", "duration": "PT1M10S", "uploadDate": "2026-11-15"}
+    ],
+    "images": [
+      {"url": "/img/belen-paya-portrait.webp", "caption": "Belén Payá, professeure d'espagnol pour francophones"},
+      {"url": "/img/belen-professeure-espagnol.webp", "caption": "Belén Payá, créatrice de profbelenespagnol"}
+    ],
+    "llms": "Accueil : présentation, méthode, programmes (Primeros pasos, Sobremesa), avis d'élèves, avals institutionnels, FAQ, contact."
+  }
+]

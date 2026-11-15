@@ -1,0 +1,35 @@
+{
+  "url": "https://profbelenespagnol.fr",
+  "name": "profbelenespagnol",
+  "alternateNames": ["Prof Belén Espagnol", "Belén Payá, cours d'espagnol"],
+  "locale": "fr_FR",
+  "language": "fr-FR",
+  "hreflang": ["fr", "fr-FR", "fr-BE", "fr-CH", "fr-LU", "fr-CA"],
+  "themeColor": "#EE6A1C",
+  "defaultImage": {"url": "/img/og-cours-espagnol-en-ligne-francophones.jpg", "width": 1200, "height": 630, "alt": "Belén Payá, professeure d'espagnol en ligne pour francophones"},
+  "logo": {"url": "/img/icon-512.png", "width": 512, "height": 512},
+  "slogan": "Je t'aide à parler espagnol avec confiance, sans prise de tête.",
+  "description": "Cours d'espagnol en ligne pour adultes francophones de France, Belgique, Suisse, Luxembourg et Canada, avec Belén Payá, professeure espagnole native.",
+  "instagram": "https://www.instagram.com/profbelenespagnol/",
+  "sameAs": ["https://www.instagram.com/profbelenespagnol/"],
+  "areaServed": ["France", "Belgique", "Suisse", "Luxembourg", "Canada"],
+  "person": {
+    "name": "Belén Payá de la Cruz",
+    "alternateNames": ["Belén Payá", "Prof Belén Espagnol", "profbelenespagnol"],
+    "jobTitle": "Professeure d'espagnol pour adultes francophones",
+    "description": "Professeure espagnole native, créatrice de profbelenespagnol, spécialisée dans l'accompagnement des adultes francophones qui veulent débloquer l'oral en espagnol.",
+    "image": "/img/belen-paya-portrait.webp",
+    "nationality": "Espagne",
+    "affiliation": ["Universidad de Alicante"],
+    "endorsedBy": ["Instituto Cervantes", "Institut français", "Universidad de Alicante"],
+    "knowsAbout": ["Enseignement de l'espagnol langue étrangère (ELE)", "Espagnol pour francophones", "Conversation en espagnol", "Linguistique appliquée", "Espagnol pour voyager", "Espagnol en famille"],
+    "languages": [["Espagnol", "es"], ["Français", "fr"], ["Anglais", "en"]]
+  },
+  "offers": [
+    {"name": "Primeros pasos", "description": "Accompagnement pour débutants (A1–A2) : bases solides et conversation dès le premier jour.", "level": "Débutant (A1–A2)"},
+    {"name": "Sobremesa", "description": "Accompagnement conversation (B1 et plus) pour débloquer l'oral et gagner en fluidité.", "level": "Intermédiaire et avancé (B1 et plus)"},
+    {"name": "Appel découverte", "description": "Appel de 30 minutes, gratuit et sans engagement, pour définir ton objectif et ton niveau.", "price": "0"}
+  ],
+  "contactUrl": "/#contact",
+  "credit": {"name": "Connectia.one", "url": "https://connectia.one"}
+}
