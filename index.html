@@ -2,6 +2,20 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<!-- Consent Mode v2 : tout refusé par défaut (RGPD / CNIL) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500 });
+  try { var c = localStorage.getItem('pbe_consent'); if (c) gtag('consent', 'update', JSON.parse(c)); } catch (e) {}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VKLF3NR');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cours d'espagnol en ligne avec Belén</title>
 <meta name="description" content="Cours d'espagnol en ligne pour adultes francophones avec Belén Payá, professeure espagnole native. Débloque l'oral et parle avec confiance : voyage, belle-famille, travail. Appel découverte offert.">
@@ -9,15 +23,15 @@
 <meta name="author" content="Belén Payá de la Cruz">
 <meta name="geo.region" content="FR">
 <meta name="language" content="fr-FR">
-<!-- À REMPLACER par le domaine définitif -->
-<link rel="canonical" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="fr" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="fr-FR" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="fr-BE" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="fr-CH" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="fr-LU" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="fr-CA" href="https://www.profbelenespagnol.com/">
-<link rel="alternate" hreflang="x-default" href="https://www.profbelenespagnol.com/">
+
+<link rel="canonical" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="fr" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="fr-FR" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="fr-BE" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="fr-CH" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="fr-LU" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="fr-CA" href="https://profbelenespagnol.fr/">
+<link rel="alternate" hreflang="x-default" href="https://profbelenespagnol.fr/">
 <link rel="alternate" type="text/plain" title="Résumé pour les IA (llms.txt)" href="/llms.txt">
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
@@ -29,17 +43,17 @@
 <meta property="og:locale:alternate" content="fr_CH">
 <meta property="og:locale:alternate" content="fr_CA">
 <meta property="og:site_name" content="profbelenespagnol · Belén Payá">
-<meta property="og:url" content="https://www.profbelenespagnol.com/">
+<meta property="og:url" content="https://profbelenespagnol.fr/">
 <meta property="og:title" content="Cours d'espagnol en ligne pour francophones · Belén Payá">
 <meta property="og:description" content="Parle espagnol avec confiance, sans prise de tête. Cours en visio pour adultes francophones, avec une professeure espagnole native.">
-<meta property="og:image" content="https://www.profbelenespagnol.com/img/og-cours-espagnol-en-ligne-francophones.jpg">
+<meta property="og:image" content="https://profbelenespagnol.fr/img/og-cours-espagnol-en-ligne-francophones.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Belén Payá, professeure d'espagnol en ligne pour francophones">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cours d'espagnol en ligne pour francophones · Belén Payá">
 <meta name="twitter:description" content="Parle espagnol avec confiance, sans prise de tête. Cours en visio pour adultes francophones.">
-<meta name="twitter:image" content="https://www.profbelenespagnol.com/img/og-cours-espagnol-en-ligne-francophones.jpg">
+<meta name="twitter:image" content="https://profbelenespagnol.fr/img/og-cours-espagnol-en-ligne-francophones.jpg">
 <link rel="preload" as="image" href="img/belen-professeure-espagnol.webp" fetchpriority="high">
 <script type="application/ld+json">
 {
@@ -47,37 +61,37 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://www.profbelenespagnol.com/#website",
-      "url": "https://www.profbelenespagnol.com/",
+      "@id": "https://profbelenespagnol.fr/#website",
+      "url": "https://profbelenespagnol.fr/",
       "name": "profbelenespagnol",
       "alternateName": ["Prof Belén Espagnol", "Belén Payá, cours d'espagnol"],
       "inLanguage": "fr-FR",
-      "publisher": {"@id": "https://www.profbelenespagnol.com/#organisation"}
+      "publisher": {"@id": "https://profbelenespagnol.fr/#organisation"}
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.profbelenespagnol.com/#webpage",
-      "url": "https://www.profbelenespagnol.com/",
+      "@id": "https://profbelenespagnol.fr/#webpage",
+      "url": "https://profbelenespagnol.fr/",
       "name": "Cours d'espagnol en ligne pour adultes francophones avec Belén Payá",
       "description": "Cours d'espagnol en ligne pour adultes francophones : conversation guidée, correction en direct, vocabulaire adapté et suivi entre les séances, avec Belén Payá, professeure espagnole native.",
       "inLanguage": "fr-FR",
-      "isPartOf": {"@id": "https://www.profbelenespagnol.com/#website"},
-      "about": {"@id": "https://www.profbelenespagnol.com/#cours"},
-      "mainEntity": {"@id": "https://www.profbelenespagnol.com/#belen"},
-      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://www.profbelenespagnol.com/img/og-cours-espagnol-en-ligne-francophones.jpg", "width": 1200, "height": 630},
+      "isPartOf": {"@id": "https://profbelenespagnol.fr/#website"},
+      "about": {"@id": "https://profbelenespagnol.fr/#cours"},
+      "mainEntity": {"@id": "https://profbelenespagnol.fr/#belen"},
+      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://profbelenespagnol.fr/img/og-cours-espagnol-en-ligne-francophones.jpg", "width": 1200, "height": 630},
       "datePublished": "2026-11-15",
       "dateModified": "2026-11-15",
       "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["#en-bref", "#faq"]}
     },
     {
       "@type": "Person",
-      "@id": "https://www.profbelenespagnol.com/#belen",
+      "@id": "https://profbelenespagnol.fr/#belen",
       "name": "Belén Payá de la Cruz",
       "alternateName": ["Belén Payá", "Prof Belén Espagnol", "profbelenespagnol"],
       "jobTitle": "Professeure d'espagnol pour adultes francophones",
       "description": "Professeure espagnole native, créatrice de profbelenespagnol, spécialisée dans l'accompagnement des adultes francophones qui veulent débloquer l'oral en espagnol.",
-      "image": "https://www.profbelenespagnol.com/img/belen-paya-portrait.webp",
-      "url": "https://www.profbelenespagnol.com/",
+      "image": "https://profbelenespagnol.fr/img/belen-paya-portrait.webp",
+      "url": "https://profbelenespagnol.fr/",
       "nationality": {"@type": "Country", "name": "Espagne"},
       "affiliation": {"@type": "CollegeOrUniversity", "name": "Universidad de Alicante"},
       "knowsLanguage": [{"@type": "Language", "name": "Espagnol", "alternateName": "es"}, {"@type": "Language", "name": "Français", "alternateName": "fr"}, {"@type": "Language", "name": "Anglais", "alternateName": "en"}],
@@ -86,14 +100,14 @@
     },
     {
       "@type": ["EducationalOrganization", "ProfessionalService"],
-      "@id": "https://www.profbelenespagnol.com/#organisation",
+      "@id": "https://profbelenespagnol.fr/#organisation",
       "name": "profbelenespagnol",
-      "url": "https://www.profbelenespagnol.com/",
-      "logo": "https://www.profbelenespagnol.com/img/logo-profbelenespagnol.webp",
-      "image": "https://www.profbelenespagnol.com/img/og-cours-espagnol-en-ligne-francophones.jpg",
+      "url": "https://profbelenespagnol.fr/",
+      "logo": "https://profbelenespagnol.fr/img/logo-profbelenespagnol.webp",
+      "image": "https://profbelenespagnol.fr/img/og-cours-espagnol-en-ligne-francophones.jpg",
       "description": "Cours d'espagnol en ligne pour adultes francophones de France, Belgique, Suisse, Luxembourg et Canada.",
       "slogan": "Je t'aide à parler espagnol avec confiance, sans prise de tête.",
-      "founder": {"@id": "https://www.profbelenespagnol.com/#belen"},
+      "founder": {"@id": "https://profbelenespagnol.fr/#belen"},
       "areaServed": [{"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "Suisse"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Canada"}],
       "availableLanguage": ["fr", "es"],
       "knowsLanguage": ["fr", "es"],
@@ -101,7 +115,7 @@
     },
     {
       "@type": "Course",
-      "@id": "https://www.profbelenespagnol.com/#cours",
+      "@id": "https://profbelenespagnol.fr/#cours",
       "name": "Cours d'espagnol en ligne pour adultes francophones",
       "description": "Accompagnement personnalisé en visio pour apprendre à parler espagnol avec confiance : conversation guidée, correction en direct, vocabulaire de la vie réelle, audios et devoirs entre les séances.",
       "inLanguage": "es",
@@ -109,15 +123,15 @@
       "educationalLevel": "Débutant à avancé (A1 à C1)",
       "teaches": ["Expression orale en espagnol", "Compréhension orale", "Vocabulaire du quotidien", "Espagnol pour voyager", "Espagnol en famille"],
       "audience": {"@type": "EducationalAudience", "audienceType": "Adultes francophones"},
-      "provider": {"@id": "https://www.profbelenespagnol.com/#organisation"},
+      "provider": {"@id": "https://profbelenespagnol.fr/#organisation"},
       "hasCourseInstance": [
-        {"@type": "CourseInstance", "name": "Primeros pasos (A1–A2)", "courseMode": "online", "instructor": {"@id": "https://www.profbelenespagnol.com/#belen"}},
-        {"@type": "CourseInstance", "name": "Sobremesa, conversation (B1 et plus)", "courseMode": "online", "instructor": {"@id": "https://www.profbelenespagnol.com/#belen"}}
+        {"@type": "CourseInstance", "name": "Primeros pasos (A1–A2)", "courseMode": "online", "instructor": {"@id": "https://profbelenespagnol.fr/#belen"}},
+        {"@type": "CourseInstance", "name": "Sobremesa, conversation (B1 et plus)", "courseMode": "online", "instructor": {"@id": "https://profbelenespagnol.fr/#belen"}}
       ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.profbelenespagnol.com/#faq",
+      "@id": "https://profbelenespagnol.fr/#faq",
       "mainEntity": [
         {"@type": "Question", "name": "Qui est Belén Payá (profbelenespagnol) ?", "acceptedAnswer": {"@type": "Answer", "text": "Belén Payá de la Cruz est une professeure d'espagnol native, originaire d'Espagne, qui donne des cours d'espagnol en ligne aux adultes francophones. Elle est connue sur Instagram sous le nom @profbelenespagnol."}},
         {"@type": "Question", "name": "Est-ce que je serai bilingue en quelques semaines ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Mais avec un accompagnement régulier, tu peux tenir tes premières vraies conversations en quelques mois et gagner en confiance dès les premières séances."}},
@@ -132,8 +146,8 @@
       "@type": "VideoObject",
       "name": "Témoignage de Marie-Laure, élève de Belén Payá",
       "description": "Marie-Laure, élève francophone, raconte ses cours d'espagnol en ligne avec Belén.",
-      "thumbnailUrl": "https://www.profbelenespagnol.com/img/poster-temoignage-marie-laure.webp",
-      "contentUrl": "https://www.profbelenespagnol.com/video/temoignage-marie-laure.mp4",
+      "thumbnailUrl": "https://profbelenespagnol.fr/img/poster-temoignage-marie-laure.webp",
+      "contentUrl": "https://profbelenespagnol.fr/video/temoignage-marie-laure.mp4",
       "uploadDate": "2026-11-15",
       "inLanguage": "fr"
     },
@@ -141,8 +155,8 @@
       "@type": "VideoObject",
       "name": "Témoignage de Stéphane, élève de Belén Payá",
       "description": "Stéphane, élève francophone, parle de ses progrès en espagnol avec Belén.",
-      "thumbnailUrl": "https://www.profbelenespagnol.com/img/poster-temoignage-stephane.webp",
-      "contentUrl": "https://www.profbelenespagnol.com/video/temoignage-stephane.mp4",
+      "thumbnailUrl": "https://profbelenespagnol.fr/img/poster-temoignage-stephane.webp",
+      "contentUrl": "https://profbelenespagnol.fr/video/temoignage-stephane.mp4",
       "uploadDate": "2026-11-15",
       "inLanguage": "fr"
     }
@@ -443,7 +457,7 @@ textarea { min-height: 96px; resize: vertical; }
 .skip:focus { top: 12px; }
 .nav-ig { display: inline-flex; align-items: center; gap: 6px; }
 .nav-ig b { background: var(--orange); color: var(--blanco); border-radius: 999px; padding: 1px 8px; font-size: .8rem; }
-.ig-count.todo, .ig-posts.todo { background: #fff2c7; color: #6b4b00; border-radius: 6px; padding: 0 5px; }
+.ig-count.todo { background: #fff2c7; color: #6b4b00; border-radius: 6px; padding: 0 5px; }
 
 /* En bref */
 .bref { padding: clamp(56px, 8vw, 96px) 0; }
@@ -558,9 +572,85 @@ label small { font-weight: 500; color: var(--gris); }
   .aval img { max-height: 84px; }
   .aval p { text-align: left; border-top: 0; border-left: 1.5px dashed color-mix(in srgb, var(--tinta) 30%, transparent); padding: 4px 0 4px 16px; }
 }
+
+/* ====== Transitions et effets ====== */
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 4px; z-index: 200; background: linear-gradient(90deg, var(--mandarina), var(--orange), var(--rosa)); transform-origin: 0 50%; transform: scaleX(0); pointer-events: none; }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .progress { animation: grow linear both; animation-timeline: scroll(root); }
+    @keyframes grow { to { transform: scaleX(1); } }
+  }
+}
+/* Entrée du héros au chargement */
+@media (prefers-reduced-motion: no-preference) {
+  .hero .eyebrow, .hero h1, .hero .lead, .hero .btn, .hero .micro { animation: heroIn .9s cubic-bezier(.2,.9,.3,1.1) both; }
+  .hero h1 { animation-delay: .08s; } .hero .lead { animation-delay: .2s; } .hero .btn { animation-delay: .3s; } .hero .micro { animation-delay: .38s; }
+  @keyframes heroIn { from { opacity: 0; transform: translateY(36px); filter: blur(6px); } }
+  .hero-photo .disc { animation: discIn 1.1s cubic-bezier(.2,.9,.3,1.3) both, morph 10s 1.1s ease-in-out infinite alternate; }
+  @keyframes discIn { from { transform: scale(.3) rotate(-30deg); opacity: 0; } }
+  .hero-photo img.cut { animation: cutIn 1s .25s cubic-bezier(.2,.9,.3,1.2) both; }
+  @keyframes cutIn { from { opacity: 0; transform: translate(-50%, 60px); } }
+  .chat.c1 { animation: popIn .6s .7s cubic-bezier(.2,.9,.3,1.6) both, bob 4s 1.3s ease-in-out infinite; }
+  .chat.c2 { animation: popIn .6s .95s cubic-bezier(.2,.9,.3,1.6) both, bob 4s 1.6s ease-in-out infinite; }
+  .hello { animation: popIn .6s 1.2s cubic-bezier(.2,.9,.3,1.6) both; }
+  @keyframes popIn { from { opacity: 0; transform: scale(.4) rotate(-10deg); } }
+  .hero h1 .squiggle path { stroke-dasharray: 340; stroke-dashoffset: 340; animation: draw 1.2s .7s ease-out forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+}
+/* Parallax du héros (piloté par JS via variables) */
+.hero-photo { --mx: 0; --my: 0; }
+.hero-photo .disc { translate: calc(var(--mx) * -14px) calc(var(--my) * -14px); }
+.hero-photo .chat.c1 { translate: calc(var(--mx) * 22px) calc(var(--my) * 18px); }
+.hero-photo .chat.c2 { translate: calc(var(--mx) * -20px) calc(var(--my) * -16px); }
+.blob { translate: calc(var(--px, 0) * 30px) calc(var(--py, 0) * 30px); }
+/* Bandeau géant qui défile au rythme du scroll */
+.mega { overflow: hidden; padding: 26px 0; background: var(--nube); border-top: 2px solid var(--tinta); border-bottom: 2px solid var(--tinta); }
+.mega-track { display: flex; gap: 40px; white-space: nowrap; font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 8vw, 6rem); line-height: 1; letter-spacing: -0.03em; will-change: transform; }
+.mega-track span:nth-child(odd) { color: transparent; -webkit-text-stroke: 2px var(--tinta); }
+.mega-track span:nth-child(even) { color: var(--orange); }
+.mega-track i { font-style: normal; color: var(--mandarina); }
+/* Sections qui s'ouvrent en cercle */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .orange, .insta-sec, .materials { animation: openUp linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; }
+    @keyframes openUp { from { clip-path: inset(6% 4% 0 4% round 48px); } to { clip-path: inset(0 0 0 0 round 0); } }
+    .pol img { animation: zoomOut linear both; animation-timeline: view(); animation-range: entry 0% cover 40%; }
+    @keyframes zoomOut { from { transform: scale(1.25); } }
+    .head h2 { animation: slideIn linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+    @keyframes slideIn { from { transform: translateX(-60px) skewX(6deg); opacity: .1; } }
+  }
+}
+/* Inclinaison 3D au survol */
+.tilt { transform-style: preserve-3d; will-change: transform; }
+.tilt.tilting { transition: transform .08s linear !important; }
+/* Bouton magnétique */
+.magnet { will-change: transform; }
+/* Compteur Instagram : petit rebond quand la valeur arrive */
+.ig-count.live { animation: bump .6s cubic-bezier(.2,.9,.3,1.8); }
+@keyframes bump { 40% { transform: scale(1.25); color: var(--orange); } }
+.ig-live { display: inline-flex; align-items: center; gap: 6px; font-size: .8rem; font-weight: 700; color: #1f9d55; }
+.ig-live::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #1f9d55; box-shadow: 0 0 0 0 rgba(31,157,85,.6); animation: pulse 1.8s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(31,157,85,0); } 100% { box-shadow: 0 0 0 0 rgba(31,157,85,0); } }
+.ig-live[hidden] { display: none; }
+.ig-grid a.post img { aspect-ratio: auto; }
+@media (prefers-reduced-motion: reduce) { .hero-photo .disc, .hero-photo .chat, .blob { translate: none; } }
+
+/* Bandeau cookies */
+.cookies { position: fixed; left: 18px; bottom: 18px; z-index: 300; max-width: 420px; background: var(--blanco); color: var(--tinta); border: 2px solid var(--tinta); border-radius: 24px; padding: 20px 22px; box-shadow: 8px 8px 0 var(--orange); display: grid; gap: 10px; animation: popIn .5s cubic-bezier(.2,.9,.3,1.5); }
+.cookies[hidden] { display: none; }
+.cookies .hand { font-size: 1.8rem; color: var(--orange); line-height: 1; }
+.cookies p { font-size: .95rem; }
+.ck-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.ck-btns .btn { padding: 12px 20px; font-size: .95rem; }
+.ck-link { background: none; border: 0; padding: 0; color: var(--nube); font: inherit; text-decoration: underline; cursor: pointer; }
+@media (max-width: 520px) { .cookies { left: 10px; right: 10px; bottom: 10px; max-width: none; } }
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VKLF3NR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="progress" aria-hidden="true"></div>
 <a class="skip" href="#main">Aller au contenu</a>
 <a class="ig-float" href="https://www.instagram.com/profbelenespagnol/" rel="me noopener" aria-label="Suivre profbelenespagnol sur Instagram"><img src="img/logo-profbelenespagnol.webp" alt="" width="36" height="36"><span>@profbelenespagnol<small><b class="ig-count">XX K</b> abonnés</small></span></a>
 
@@ -621,31 +711,6 @@ label small { font-weight: 500; color: var(--gris); }
   </div>
 </div>
 
-<!-- AVALS INSTITUTIONNELS -->
-<section class="avals" aria-labelledby="avals-t">
-  <div class="wrap avals-grid">
-    <div class="avals-text reveal">
-      <span class="eyebrow">Avalée par</span>
-      <h2 id="avals-t">Un enseignement reconnu des deux côtés des Pyrénées</h2>
-      <p>Mon travail est avalé par trois institutions de référence pour la langue, la culture et l'enseignement, en Espagne et en France.</p>
-    </div>
-    <ul class="avals-logos" role="list">
-      <li class="aval reveal">
-        <img src="img/logo-instituto-cervantes.webp" alt="Logo de l'Instituto Cervantes" width="430" height="480" loading="lazy">
-        <p><b>Instituto Cervantes</b><span>Langue et culture espagnoles</span></p>
-      </li>
-      <li class="aval reveal">
-        <img src="img/logo-institut-francais.webp" alt="Logo de l'Institut français" width="447" height="193" loading="lazy">
-        <p><b>Institut français</b><span>Langue et culture françaises</span></p>
-      </li>
-          <li class="aval reveal">
-        <img src="img/logo-universite-alicante.webp" alt="Logo de l'Université d'Alicante (Universitat d'Alacant)" width="421" height="281" loading="lazy">
-        <p><b>Université d'Alicante</b><span>Recherche et enseignement universitaire</span></p>
-      </li>
-    </ul>
-  </div>
-</section>
-
 <!-- EN BREF : bloc factuel, facile à citer par les moteurs et les IA -->
 <section id="en-bref" class="bref" aria-labelledby="bref-t">
   <div class="wrap bref-grid">
@@ -703,6 +768,8 @@ label small { font-weight: 500; color: var(--gris); }
     </div>
   </div>
 </section>
+
+<div class="mega" aria-hidden="true"><div class="mega-track"><span>¡Habla español!</span><i>✺</i><span>Parle espagnol</span><i>✺</i><span>Sin miedo</span><i>✺</i><span>Sans prise de tête</span><i>✺</i><span>¡Vamos!</span><i>✺</i><span>Avec confiance</span><i>✺</i><span>¡Habla español!</span><i>✺</i><span>Parle espagnol</span></div></div>
 
 <!-- MÉTHODE -->
 <section id="methode">
@@ -836,6 +903,31 @@ label small { font-weight: 500; color: var(--gris); }
   </div>
 </section>
 
+<!-- AVALS INSTITUTIONNELS -->
+<section class="avals" aria-labelledby="avals-t">
+  <div class="wrap avals-grid">
+    <div class="avals-text reveal">
+      <span class="eyebrow">Avalée par</span>
+      <h2 id="avals-t">Un enseignement reconnu des deux côtés des Pyrénées</h2>
+      <p>Mon travail est avalé par trois institutions de référence pour la langue, la culture et l'enseignement, en Espagne et en France.</p>
+    </div>
+    <ul class="avals-logos" role="list">
+      <li class="aval reveal">
+        <img src="img/logo-instituto-cervantes.webp" alt="Logo de l'Instituto Cervantes" width="430" height="480" loading="lazy">
+        <p><b>Instituto Cervantes</b><span>Langue et culture espagnoles</span></p>
+      </li>
+      <li class="aval reveal">
+        <img src="img/logo-institut-francais.webp" alt="Logo de l'Institut français" width="447" height="193" loading="lazy">
+        <p><b>Institut français</b><span>Langue et culture françaises</span></p>
+      </li>
+          <li class="aval reveal">
+        <img src="img/logo-universite-alicante.webp" alt="Logo de l'Université d'Alicante (Universitat d'Alacant)" width="421" height="281" loading="lazy">
+        <p><b>Université d'Alicante</b><span>Recherche et enseignement universitaire</span></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <!-- QUI SUIS-JE -->
 <section id="belen">
   <div class="wrap about">
@@ -867,7 +959,7 @@ label small { font-weight: 500; color: var(--gris); }
           <p class="ig-handle">profbelenespagnol <span class="ig-verified" aria-hidden="true">✦</span></p>
           <div class="ig-stats">
             <p><b class="ig-count">XX K</b><span>abonnés</span></p>
-            <p><b class="ig-posts">XXX</b><span>publications</span></p>
+            <p><span class="ig-live" hidden>en direct</span></p>
           </div>
         </div>
       </div>
@@ -889,6 +981,8 @@ label small { font-weight: 500; color: var(--gris); }
     </div>
   </div>
 </section>
+
+<div class="mega" aria-hidden="true"><div class="mega-track"><span>¡Lo has conseguido!</span><i>✺</i><span>Parle espagnol</span><i>✺</i><span>Sin miedo</span><i>✺</i><span>Sans prise de tête</span><i>✺</i><span>¡Vamos!</span><i>✺</i><span>Avec confiance</span><i>✺</i><span>¡Habla español!</span><i>✺</i><span>Parle espagnol</span></div></div>
 
 <!-- FAQ -->
 <section id="faq" style="padding-top:0">
@@ -921,8 +1015,8 @@ label small { font-weight: 500; color: var(--gris); }
       <a class="insta" href="https://www.instagram.com/profbelenespagnol/" rel="me noopener">Ou écris-moi sur Instagram : @profbelenespagnol →</a>
     </div>
 
-    <!-- Formspree : remplacer TON_ID_FORMSPREE par l'identifiant du formulaire -->
-    <form id="form" class="wizard reveal" action="https://formspree.io/f/TON_ID_FORMSPREE" method="POST" novalidate>
+    <!-- Formspree -->
+    <form id="form" class="wizard reveal" action="https://formspree.io/f/mkjrjbyp" method="POST" novalidate>
       <input type="hidden" name="_subject" value="Nouvelle demande d'appel découverte · profbelenespagnol">
       <input type="hidden" name="_language" value="fr">
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
@@ -995,6 +1089,11 @@ label small { font-weight: 500; color: var(--gris); }
 </section>
 </main>
 
+<div class="cookies" id="cookies" role="dialog" aria-labelledby="ck-t" aria-describedby="ck-d" hidden>
+  <p class="hand" id="ck-t">¿Unas cookies? 🍪</p>
+  <p id="ck-d">J'utilise des cookies de mesure d'audience pour comprendre comment le site est utilisé et l'améliorer. Tu peux accepter ou refuser, ton choix est enregistré.</p>
+  <div class="ck-btns"><button type="button" class="btn btn-light" id="ckNo">Refuser</button><button type="button" class="btn btn-main" id="ckYes">Accepter</button></div>
+</div>
 <footer class="site-footer">
   <div class="wrap foot-grid">
     <div class="foot-brand">
@@ -1026,7 +1125,7 @@ label small { font-weight: 500; color: var(--gris); }
     </div>
   </div>
   <div class="wrap foot-bottom">
-    <span>© 2026 profbelenespagnol · Belén Payá de la Cruz</span>
+    <span>© 2026 profbelenespagnol · Belén Payá de la Cruz · <button type="button" class="ck-link" id="ckOpen">Gérer les cookies</button></span>
     <span>Design &amp; développement par <a href="https://connectia.one" rel="noopener">Connectia.one</a></span>
   </div>
 </footer>
@@ -1071,10 +1170,87 @@ document.querySelectorAll('.vcard').forEach(card => {
   });
 });
 
-// ====== Instagram : mettre ici les chiffres réels ======
-const INSTAGRAM = { abonnes: '', publications: '' }; // ex. { abonnes: '48,2 K', publications: '612' }
-document.querySelectorAll('.ig-count').forEach(el => { if (INSTAGRAM.abonnes) el.textContent = INSTAGRAM.abonnes; else el.classList.add('todo'); });
-document.querySelectorAll('.ig-posts').forEach(el => { if (INSTAGRAM.publications) el.textContent = INSTAGRAM.publications; else el.classList.add('todo'); });
+// ====== Instagram en temps réel (Behold) ======
+// 1. Créer un compte gratuit sur behold.so et connecter @profbelenespagnol
+// 2. Créer un flux « JSON » et coller son URL ci-dessous (ex. https://feeds.behold.so/AbC123)
+const BEHOLD_FEED_URL = '';
+// Valeur de secours tant que le flux n'est pas connecté (ex. 48200)
+const INSTAGRAM_ABONNES_SECOURS = 0;
+
+const fmtFollowers = n => n >= 1e6 ? (n / 1e6).toLocaleString('fr-FR', { maximumFractionDigits: 1 }) + ' M'
+  : n >= 1e4 ? (n / 1e3).toLocaleString('fr-FR', { maximumFractionDigits: 1 }) + ' k'
+  : n.toLocaleString('fr-FR');
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function paintFollowers(n, live) {
+  document.querySelectorAll('.ig-count').forEach(el => {
+    el.classList.remove('todo');
+    if (reduceMotion || !live) { el.textContent = fmtFollowers(n); return; }
+    const t0 = performance.now(), from = Math.round(n * 0.6), dur = 1400;
+    const tick = t => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmtFollowers(Math.round(from + (n - from) * e)); if (p < 1) requestAnimationFrame(tick); else el.classList.add('live'); };
+    requestAnimationFrame(tick);
+  });
+  document.querySelectorAll('.ig-live').forEach(el => el.hidden = !live);
+}
+function paintPosts(posts) {
+  const grid = document.querySelector('.ig-grid'); if (!grid || !posts?.length) return;
+  grid.innerHTML = posts.slice(0, 6).map(p => {
+    const img = p.sizes?.medium?.mediaUrl || p.thumbnailUrl || p.mediaUrl;
+    const cap = (p.prunedCaption || '').replace(/[<>&"]/g, c => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]));
+    return `<a class="post" href="${p.permalink}" rel="noopener"><img src="${img}" alt="${cap.slice(0, 120) || 'Publication Instagram de profbelenespagnol'}" loading="lazy"><span>${cap.slice(0, 60) || 'Voir sur Instagram'}</span></a>`;
+  }).join('');
+}
+(async () => {
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem('pbe_ig') || 'null'); } catch {}
+  if (cached?.n) paintFollowers(cached.n, false);
+  else if (INSTAGRAM_ABONNES_SECOURS) paintFollowers(INSTAGRAM_ABONNES_SECOURS, false);
+  else document.querySelectorAll('.ig-count').forEach(el => el.classList.add('todo'));
+  if (!BEHOLD_FEED_URL) return;
+  try {
+    const r = await fetch(BEHOLD_FEED_URL, { cache: 'no-store' }); if (!r.ok) throw 0;
+    const feed = await r.json();
+    if (typeof feed.followersCount === 'number') {
+      paintFollowers(feed.followersCount, true);
+      try { localStorage.setItem('pbe_ig', JSON.stringify({ n: feed.followersCount, t: Date.now() })); } catch {}
+    }
+    paintPosts(feed.posts);
+  } catch { /* on garde la valeur affichée */ }
+})();
+
+// ====== Effets interactifs ======
+if (!reduceMotion) {
+  // Parallax du héros et des taches de couleur
+  const photo = document.querySelector('.hero-photo'), hero = document.querySelector('.hero');
+  hero?.addEventListener('pointermove', e => {
+    const r = hero.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    photo.style.setProperty('--mx', x.toFixed(3)); photo.style.setProperty('--my', y.toFixed(3));
+    hero.style.setProperty('--px', x.toFixed(3)); hero.style.setProperty('--py', y.toFixed(3));
+  });
+  // Inclinaison 3D des cartes
+  const fine = matchMedia('(pointer: fine)').matches;
+  if (fine) document.querySelectorAll('.profile, .program, .aval, .note, .step, .ig-card').forEach(c => {
+    c.classList.add('tilt');
+    c.addEventListener('pointermove', e => {
+      const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      c.classList.add('tilting'); c.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) translateY(-6px)`;
+    });
+    c.addEventListener('pointerleave', () => { c.classList.remove('tilting'); c.style.transform = ''; });
+  });
+  // Boutons magnétiques
+  if (fine) document.querySelectorAll('.btn-main, .btn-ig').forEach(b => {
+    b.classList.add('magnet');
+    b.addEventListener('pointermove', e => { const r = b.getBoundingClientRect();
+      b.style.translate = `${(e.clientX - r.left - r.width / 2) * .18}px ${(e.clientY - r.top - r.height / 2) * .3}px`; });
+    b.addEventListener('pointerleave', () => { b.style.translate = ''; });
+  });
+  // Bandeau géant lié au scroll
+  const mega = document.querySelector('.mega-track');
+  if (mega) { let ticking = false;
+    const move = () => { const r = mega.parentElement.getBoundingClientRect();
+      mega.style.transform = `translateX(${(r.top - innerHeight) * .35}px)`; ticking = false; };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(move); } }, { passive: true }); move(); }
+}
 
 // ====== Formulaire par étapes (Formspree) ======
 const form = document.getElementById('form');
@@ -1101,13 +1277,12 @@ function valid(i) {
   }
   return '';
 }
-next.addEventListener('click', () => { const m = valid(cur); if (m) { err.textContent = m; return; } show(cur + 1); });
+next.addEventListener('click', () => { const m = valid(cur); if (m) { err.textContent = m; return; } dataLayer.push({ event: 'formulaire_etape', etape: cur + 2 }); show(cur + 1); });
 prev.addEventListener('click', () => show(cur - 1));
 steps.forEach(s => s.addEventListener('change', () => { err.textContent = ''; }));
 form.addEventListener('submit', async e => {
   e.preventDefault();
   const m = valid(3); if (m) { err.textContent = m; return; }
-  if (form.action.includes('TON_ID_FORMSPREE')) { err.textContent = 'Formulaire en mode brouillon : l\'envoi sera actif dès que Formspree sera connecté. En attendant, écris à Belén sur Instagram.'; return; }
   send.disabled = true; send.firstChild.textContent = 'Envoi en cours… ';
   try {
     const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
@@ -1115,11 +1290,38 @@ form.addEventListener('submit', async e => {
     steps.forEach(s => s.classList.remove('active'));
     document.getElementById('wzNav').hidden = true; document.querySelector('.wz-top').hidden = true;
     document.getElementById('wzDone').hidden = false; err.textContent = '';
+    dataLayer.push({ event: 'generate_lead', form_name: 'appel_decouverte', niveau: form.niveau.value, pays: form.pays.value });
   } catch {
     err.textContent = 'L\'envoi n\'a pas fonctionné. Réessaie dans un instant, ou écris directement à Belén sur Instagram.';
   } finally { send.disabled = false; send.firstChild.textContent = 'Envoyer ma demande '; }
 });
 show(0);
+
+// ====== Consentement cookies + événements de mesure ======
+(function () {
+  const box = document.getElementById('cookies');
+  let saved = null; try { saved = localStorage.getItem('pbe_consent'); } catch (e) {}
+  if (!saved) box.hidden = false;
+  const set = ok => {
+    const v = ok ? 'granted' : 'denied';
+    const c = { analytics_storage: v, ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' };
+    gtag('consent', 'update', c);
+    try { localStorage.setItem('pbe_consent', JSON.stringify(c)); } catch (e) {}
+    dataLayer.push({ event: ok ? 'consent_granted' : 'consent_denied' });
+    box.hidden = true;
+  };
+  document.getElementById('ckYes').onclick = () => set(true);
+  document.getElementById('ckNo').onclick = () => set(false);
+  document.getElementById('ckOpen').onclick = () => { box.hidden = false; };
+  // Clics sur les appels à l'action et sur Instagram
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a'); if (!a) return;
+    if (a.href.includes('instagram.com')) dataLayer.push({ event: 'clic_instagram', link_url: a.href });
+    else if (a.getAttribute('href') === '#contact') dataLayer.push({ event: 'clic_appel_decouverte', link_text: a.textContent.trim().slice(0, 60) });
+  });
+  // Lecture des témoignages vidéo
+  document.querySelectorAll('.vcard .play').forEach(b => b.addEventListener('click', () => dataLayer.push({ event: 'video_temoignage', video_title: b.getAttribute('aria-label') })));
+})();
 </script>
 </body>
 </html>

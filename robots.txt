@@ -27,4 +27,4 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Sitemap: https://www.profbelenespagnol.com/sitemap.xml
+Sitemap: https://profbelenespagnol.fr/sitemap.xml
