@@ -6,7 +6,13 @@
     "title": "Cours d'espagnol en ligne avec Belén",
     "ogTitle": "Cours d'espagnol en ligne pour francophones · Belén Payá",
     "description": "Cours d'espagnol en ligne pour adultes francophones avec Belén Payá, professeure espagnole native. Débloque l'oral et parle avec confiance : voyage, belle-famille, travail. Appel découverte offert.",
-    "keywords": ["cours d'espagnol en ligne", "professeur d'espagnol natif", "cours d'espagnol pour adultes", "apprendre l'espagnol", "conversation espagnol en ligne"],
+    "keywords": [
+      "cours d'espagnol en ligne",
+      "professeur d'espagnol natif",
+      "cours d'espagnol pour adultes",
+      "apprendre l'espagnol",
+      "conversation espagnol en ligne"
+    ],
     "published": "2026-11-15",
     "modified": "2026-11-15",
     "image": null,
@@ -14,16 +20,69 @@
     "breadcrumbs": [],
     "course": true,
     "faqSelector": "#faq details",
-    "speakable": ["#en-bref", "#faq"],
+    "speakable": [
+      "#en-bref",
+      "#faq"
+    ],
     "videos": [
-      {"name": "Témoignage de Marie-Laure, élève de Belén Payá", "description": "Marie-Laure, élève francophone, raconte ses cours d'espagnol en ligne avec Belén.", "thumbnail": "/img/poster-temoignage-marie-laure.webp", "content": "/video/temoignage-marie-laure.mp4", "duration": "PT1M35S", "uploadDate": "2026-11-15"},
-      {"name": "Témoignage de Stéphane, élève de Belén Payá", "description": "Stéphane, élève francophone, parle de ses progrès en espagnol avec Belén.", "thumbnail": "/img/poster-temoignage-stephane.webp", "content": "/video/temoignage-stephane.mp4", "duration": "PT1M36S", "uploadDate": "2026-11-15"},
-      {"name": "Témoignage d'une élève de Belén Payá", "description": "Une élève francophone partage son expérience des cours d'espagnol en ligne avec Belén.", "thumbnail": "/img/poster-temoignage-eleve.webp", "content": "/video/temoignage-eleve.mp4", "duration": "PT1M10S", "uploadDate": "2026-11-15"}
+      {
+        "name": "Témoignage de Marie-Laure, élève de Belén Payá",
+        "description": "Marie-Laure, élève francophone, raconte ses cours d'espagnol en ligne avec Belén.",
+        "thumbnail": "/img/poster-temoignage-marie-laure.webp",
+        "content": "/video/temoignage-marie-laure.mp4",
+        "duration": "PT1M35S",
+        "uploadDate": "2026-11-15"
+      },
+      {
+        "name": "Témoignage de Stéphane, élève de Belén Payá",
+        "description": "Stéphane, élève francophone, parle de ses progrès en espagnol avec Belén.",
+        "thumbnail": "/img/poster-temoignage-stephane.webp",
+        "content": "/video/temoignage-stephane.mp4",
+        "duration": "PT1M36S",
+        "uploadDate": "2026-11-15"
+      },
+      {
+        "name": "Témoignage d'une élève de Belén Payá",
+        "description": "Une élève francophone partage son expérience des cours d'espagnol en ligne avec Belén.",
+        "thumbnail": "/img/poster-temoignage-eleve.webp",
+        "content": "/video/temoignage-eleve.mp4",
+        "duration": "PT1M10S",
+        "uploadDate": "2026-11-15"
+      }
     ],
     "images": [
-      {"url": "/img/belen-paya-portrait.webp", "caption": "Belén Payá, professeure d'espagnol pour francophones"},
-      {"url": "/img/belen-professeure-espagnol.webp", "caption": "Belén Payá, créatrice de profbelenespagnol"}
+      {
+        "url": "/img/belen-paya-portrait.webp",
+        "caption": "Belén Payá, professeure d'espagnol pour francophones"
+      },
+      {
+        "url": "/img/belen-professeure-espagnol.webp",
+        "caption": "Belén Payá, créatrice de profbelenespagnol"
+      }
     ],
     "llms": "Accueil : présentation, méthode, programmes (Primeros pasos, Sobremesa), avis d'élèves, avals institutionnels, FAQ, contact."
+  },
+  {
+    "file": "politique-cookies/index.html",
+    "path": "/politique-cookies/",
+    "type": "legal",
+    "title": "Politique de cookies · profbelenespagnol",
+    "description": "Cookies utilisés sur profbelenespagnol.fr : mesure d'audience Google Analytics 4 via Google Tag Manager (avec consentement), Google Search Console sans cookie, et comment gérer ton choix.",
+    "keywords": [
+      "politique de cookies",
+      "Google Analytics",
+      "Google Search Console",
+      "consentement cookies"
+    ],
+    "published": "2026-11-15",
+    "modified": "2026-11-15",
+    "image": null,
+    "breadcrumbs": [
+      {
+        "name": "Politique de cookies",
+        "path": "/politique-cookies/"
+      }
+    ],
+    "llms": "Cookies utilisés (GA4 via GTM avec consentement, Search Console sans cookie) et gestion du consentement."
   }
 ]

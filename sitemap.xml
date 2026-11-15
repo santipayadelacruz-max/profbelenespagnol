@@ -16,4 +16,15 @@
     <video:video><video:thumbnail_loc>https://profbelenespagnol.fr/img/poster-temoignage-stephane.webp</video:thumbnail_loc><video:title>Témoignage de Stéphane, élève de Belén Payá</video:title><video:description>Stéphane, élève francophone, parle de ses progrès en espagnol avec Belén.</video:description><video:content_loc>https://profbelenespagnol.fr/video/temoignage-stephane.mp4</video:content_loc></video:video>
     <video:video><video:thumbnail_loc>https://profbelenespagnol.fr/img/poster-temoignage-eleve.webp</video:thumbnail_loc><video:title>Témoignage d&#x27;une élève de Belén Payá</video:title><video:description>Une élève francophone partage son expérience des cours d&#x27;espagnol en ligne avec Belén.</video:description><video:content_loc>https://profbelenespagnol.fr/video/temoignage-eleve.mp4</video:content_loc></video:video>
   </url>
+  <url>
+    <loc>https://profbelenespagnol.fr/politique-cookies/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://profbelenespagnol.fr/politique-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://profbelenespagnol.fr/politique-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://profbelenespagnol.fr/politique-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="fr-CH" href="https://profbelenespagnol.fr/politique-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://profbelenespagnol.fr/politique-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://profbelenespagnol.fr/politique-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://profbelenespagnol.fr/politique-cookies/"/>
+  </url>
 </urlset>
