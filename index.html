@@ -599,16 +599,16 @@ header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, v
 .hero-photo img.cut { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 100%; width: auto; max-width: none; filter: drop-shadow(0 18px 24px rgba(21,17,15,.25)); }
 .chat { position: absolute; background: var(--blanco); border: 2px solid var(--tinta); border-radius: 22px; padding: 10px 16px; font-weight: 600; font-size: .95rem; box-shadow: 4px 4px 0 var(--tinta); max-width: 230px; line-height: 1.35; animation: bob 4s ease-in-out infinite; }
 .chat small { display: block; font-weight: 500; font-size: .76rem; color: var(--gris); }
-.chat.c1 { top: 16%; left: -14%; border-bottom-left-radius: 4px; }
-.chat.c2 { bottom: 14%; right: -10%; background: var(--tinta); color: var(--blanco); border-bottom-right-radius: 4px; animation-delay: -2s; box-shadow: 4px 4px 0 var(--orange); }
+.chat.c1 { top: 50%; left: -22%; border-bottom-left-radius: 4px; }
+.chat.c2 { bottom: 6%; right: -14%; background: var(--tinta); color: var(--blanco); border-bottom-right-radius: 4px; animation-delay: -2s; box-shadow: 4px 4px 0 var(--orange); }
 .chat.c2 small { color: var(--melocoton); }
 @keyframes bob { 50% { transform: translateY(-10px); } }
-.hello { position: absolute; top: 2%; right: 4%; font-family: var(--hand); font-size: 1.9rem; transform: rotate(8deg); line-height: 1; }
+.hello { position: absolute; top: 4%; right: -6%; font-family: var(--hand); font-size: 1.9rem; transform: rotate(8deg); line-height: 1; }
 .hello svg { display: block; margin: 4px 0 0 30px; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-photo { width: min(88%, 380px); margin-top: 12px; }
-  .chat.c1 { left: -6%; } .chat.c2 { right: -6%; }
+  .chat.c1 { left: -8%; top: 36%; max-width: 200px; } .chat.c2 { right: -8%; bottom: 0; max-width: 200px; } .hello { right: 0; font-size: 1.6rem; }
 }
 
 /* Bande de confiance */
@@ -1009,6 +1009,10 @@ label small { font-weight: 500; color: var(--gris); }
 .fm-body { padding: 18px 24px 24px; }
 .fm-body form { box-shadow: none; border-color: var(--tinta); background: var(--blanco); }
 .form-placeholder { border: 2px dashed var(--nube); border-radius: 28px; padding: 28px; display: grid; gap: 14px; place-items: start; color: #d8ccc4; }
+.wizard.sent { text-align: left; }
+.wz-top[hidden], .wz-nav[hidden], .wizard.sent .err { display: none !important; }
+.wz-done h3 { font-size: 1.5rem; }
+.wz-done-ig { color: var(--gris); font-size: .95rem; }
 </style>
 </head>
 <body>
@@ -1444,10 +1448,11 @@ label small { font-weight: 500; color: var(--gris); }
         <label class="consent"><input type="checkbox" name="consentement" value="oui" required id="f-ok"><span>J'accepte que Belén utilise ces informations pour me recontacter au sujet de mes cours.</span></label>
       </fieldset>
 
-      <div class="wz-done" id="wzDone" hidden>
-        <p class="hand" style="font-size:2.6rem;color:var(--orange);line-height:1">¡Genial!</p>
-        <h3>Ta demande est bien envoyée.</h3>
-        <p>Belén te répond sous 24 h pour fixer ton appel découverte. En attendant, viens dire hola sur <a href="https://www.instagram.com/profbelenespagnol/" rel="noopener">Instagram</a> 👋</p>
+      <div class="wz-done" id="wzDone" hidden role="status">
+        <p class="hand" style="font-size:2.8rem;color:var(--orange);line-height:1">¡Muchas gracias!</p>
+        <h3>Merci, ta demande est bien envoyée.</h3>
+        <p>Belén te contactera très bientôt pour fixer ton appel découverte. Pense à vérifier tes e-mails (et tes spams).</p>
+        <p class="wz-done-ig">En attendant, viens dire hola sur <a href="https://www.instagram.com/profbelenespagnol/" rel="noopener">Instagram</a> 👋</p>
       </div>
 
       <p class="err" id="err" role="alert"></p>
@@ -1652,22 +1657,34 @@ function valid(i) {
 next.addEventListener('click', () => { const m = valid(cur); if (m) { err.textContent = m; return; } dataLayer.push({ event: 'formulaire_etape', etape: cur + 2 }); show(cur + 1); });
 prev.addEventListener('click', () => show(cur - 1));
 steps.forEach(s => s.addEventListener('change', () => { err.textContent = ''; }));
+let sending = false;
+function finish() {
+  steps.forEach(st => st.classList.remove('active'));
+  document.getElementById('wzNav').hidden = true; document.querySelector('.wz-top').hidden = true;
+  document.getElementById('wzDone').hidden = false; err.textContent = '';
+  form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+  form.classList.add('sent');
+  const cta = document.getElementById('ctaFloat');
+  if (cta) cta.querySelector('span').innerHTML = '<b>Demande envoyée ✓</b><small>Belén te contacte très bientôt</small>';
+}
 form.addEventListener('submit', async e => {
   e.preventDefault();
+  if (sending || form.classList.contains('sent')) return;
   const m = valid(3); if (m) { err.textContent = m; return; }
-  send.disabled = true; send.firstChild.textContent = 'Envoi en cours… ';
+  sending = true; send.disabled = true; send.firstChild.textContent = 'Envoi en cours… ';
   try {
     const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
     if (!r.ok) throw new Error();
-    steps.forEach(s => s.classList.remove('active'));
-    document.getElementById('wzNav').hidden = true; document.querySelector('.wz-top').hidden = true;
-    document.getElementById('wzDone').hidden = false; err.textContent = '';
+    try { localStorage.setItem('pbe_lead_sent', String(Date.now())); } catch {}
+    finish();
     dataLayer.push({ event: 'generate_lead', form_name: 'appel_decouverte', niveau: form.niveau.value, pays: form.pays.value });
   } catch {
+    sending = false; send.disabled = false; send.firstChild.textContent = 'Envoyer ma demande ';
     err.textContent = 'L\'envoi n\'a pas fonctionné. Réessaie dans un instant, ou écris directement à Belén sur Instagram.';
-  } finally { send.disabled = false; send.firstChild.textContent = 'Envoyer ma demande '; }
+  }
 });
 show(0);
+try { if (localStorage.getItem('pbe_lead_sent')) finish(); } catch {}
 
 // ====== Formulaire en fenêtre (bouton flottant) ======
 (function () {
