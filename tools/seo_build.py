@@ -22,6 +22,20 @@ ID = lambda frag: f"{BASE}/#{frag}"
 absu = lambda u: u if (u or "").startswith("http") else BASE + (u if u.startswith("/") else "/" + u)
 esc = lambda t: html.escape(t or "", quote=True)
 
+def iso(d):
+    """Fecha completa con hora y zona horaria (Europe/Paris), como pide Google."""
+    if not d or "T" in d:
+        return d
+    import datetime as _dt
+    y, m, dd = map(int, d.split("-"))
+    # horario de verano UE: del último domingo de marzo al último domingo de octubre
+    def last_sunday(month):
+        x = _dt.date(y, month, 31)
+        return x - _dt.timedelta(days=(x.weekday() + 1) % 7)
+    off = "+02:00" if last_sunday(3) <= _dt.date(y, m, dd) < last_sunday(10) else "+01:00"
+    return f"{d}T10:00:00{off}"
+
+
 WEBPAGE_TYPES = {"home": "WebPage", "service": "WebPage", "article": "WebPage", "about": "AboutPage",
                  "contact": "ContactPage", "faq": "FAQPage", "collection": "CollectionPage", "event": "WebPage"}
 
@@ -76,7 +90,7 @@ def page_nodes(pg, page_html):
           "description": pg["description"], "inLanguage": SITE["language"], "isPartOf": {"@id": ID("website")},
           "about": {"@id": ID("organisation")}, "author": {"@id": ID("belen")}, "publisher": {"@id": ID("organisation")},
           "primaryImageOfPage": {"@type": "ImageObject", "url": absu(img["url"]), "width": img.get("width"), "height": img.get("height")},
-          "datePublished": pg["published"], "dateModified": pg["modified"],
+          "datePublished": iso(pg["published"]), "dateModified": iso(pg["modified"]),
           "keywords": ", ".join(pg.get("keywords", []))}
     if pg.get("speakable"):
         wp["speakable"] = {"@type": "SpeakableSpecification", "cssSelector": pg["speakable"]}
@@ -111,7 +125,7 @@ def page_nodes(pg, page_html):
 
     for v in pg.get("videos", []):
         nodes.append({"@type": "VideoObject", "name": v["name"], "description": v["description"], "thumbnailUrl": absu(v["thumbnail"]),
-                      "contentUrl": absu(v["content"]), "uploadDate": v["uploadDate"], "duration": v.get("duration"),
+                      "contentUrl": absu(v["content"]), "uploadDate": iso(v["uploadDate"]), "duration": v.get("duration"),
                       "inLanguage": "fr", "publisher": {"@id": ID("organisation")}, "isPartOf": {"@id": wp_id}})
     for im in pg.get("images", []):
         nodes.append({"@type": "ImageObject", "contentUrl": absu(im["url"]), "caption": im["caption"],
@@ -120,12 +134,16 @@ def page_nodes(pg, page_html):
                       "acquireLicensePage": absu(SITE["contactUrl"])})
     if pg["type"] == "article":
         nodes.append({"@type": "BlogPosting", "@id": url + "#article", "headline": pg["title"][:110], "description": pg["description"],
-                      "image": [absu(img["url"])], "datePublished": pg["published"], "dateModified": pg["modified"],
+                      "image": [absu(img["url"])], "datePublished": iso(pg["published"]), "dateModified": iso(pg["modified"]),
                       "author": {"@id": ID("belen")}, "publisher": {"@id": ID("organisation")}, "mainEntityOfPage": {"@id": wp_id},
                       "inLanguage": SITE["language"], "keywords": pg.get("keywords", [])})
+    if pg["type"] == "collection":
+        arts = [x for x in PAGES if x["type"] == "article" and x["path"].startswith(pg["path"])]
+        nodes.append({"@type": "ItemList", "@id": url + "#articles", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": BASE + a["path"], "name": a["title"]} for i, a in enumerate(arts)]})
     if pg["type"] == "event" and pg.get("event"):
         e = pg["event"]
-        nodes.append({"@type": "Event", "name": e["name"], "description": e["description"], "startDate": e["start"], "endDate": e.get("end", e["start"]),
+        nodes.append({"@type": "Event", "name": e["name"], "description": e["description"], "startDate": iso(e["start"]), "endDate": iso(e.get("end", e["start"])),
                       "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled",
                       "location": {"@type": "VirtualLocation", "url": url}, "image": [absu(img["url"])],
                       "organizer": {"@id": ID("organisation")}, "performer": {"@id": ID("belen")},
@@ -165,7 +183,7 @@ def head_block(pg, page_html):
     for v in pg.get("videos", [])[:1]:
         L += [f'<meta property="og:video" content="{absu(v["content"])}">', '<meta property="og:video:type" content="video/mp4">']
     if og_type == "article":
-        L += [f'<meta property="article:published_time" content="{pg["published"]}">', f'<meta property="article:modified_time" content="{pg["modified"]}">',
+        L += [f'<meta property="article:published_time" content="{iso(pg["published"])}">', f'<meta property="article:modified_time" content="{iso(pg["modified"])}">',
               f'<meta property="article:author" content="{SITE["instagram"]}">', '<meta property="article:section" content="Apprendre l\'espagnol">']
         L += [f'<meta property="article:tag" content="{esc(k)}">' for k in pg.get("keywords", [])]
     L += ['<meta name="twitter:card" content="summary_large_image">',
@@ -178,7 +196,6 @@ def head_block(pg, page_html):
           '<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">',
           '<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96.png">',
           '<link rel="apple-touch-icon" sizes="180x180" href="/img/icon-180.png">',
-          '<link rel="manifest" href="/site.webmanifest">',
           f'<meta name="theme-color" content="{SITE["themeColor"]}">']
     if pg.get("preloadImage"):
         L.append(f'<link rel="preload" as="image" href="{pg["preloadImage"]}" fetchpriority="high">')

@@ -5,7 +5,7 @@
     "type": "home",
     "title": "Cours d'espagnol en ligne avec Belén",
     "ogTitle": "Cours d'espagnol en ligne pour francophones · Belén Payá",
-    "description": "Cours d'espagnol en ligne pour adultes francophones avec Belén Payá, professeure espagnole native. Débloque l'oral et parle avec confiance : voyage, belle-famille, travail. Appel découverte offert.",
+    "description": "Cours d'espagnol en ligne pour adultes francophones avec Belén Payá, prof native. Débloque l'oral : voyage, belle-famille, travail. Appel découverte offert.",
     "keywords": [
       "cours d'espagnol en ligne",
       "professeur d'espagnol natif",
@@ -67,7 +67,7 @@
     "path": "/politique-cookies/",
     "type": "legal",
     "title": "Politique de cookies · profbelenespagnol",
-    "description": "Cookies utilisés sur profbelenespagnol.fr : mesure d'audience Google Analytics 4 via Google Tag Manager (avec consentement), Google Search Console sans cookie, et comment gérer ton choix.",
+    "description": "Cookies de profbelenespagnol.fr : Google Analytics 4 via Tag Manager (avec consentement), Search Console sans cookie, et comment gérer ton choix.",
     "keywords": [
       "politique de cookies",
       "Google Analytics",
@@ -84,5 +84,281 @@
       }
     ],
     "llms": "Cookies utilisés (GA4 via GTM avec consentement, Search Console sans cookie) et gestion du consentement."
+  },
+  {
+    "file": "cours-particuliers-espagnol-en-ligne/index.html",
+    "path": "/cours-particuliers-espagnol-en-ligne/",
+    "type": "service",
+    "title": "Cours particuliers d'espagnol en ligne · Belén Payá",
+    "description": "Cours particuliers d'espagnol en ligne avec Belén, prof espagnole native. Programme 100 % sur mesure pour adultes francophones. Appel découverte gratuit.",
+    "keywords": [
+      "cours particulier d'espagnol en ligne",
+      "prof d'espagnol en visio",
+      "cours d'espagnol individuel",
+      "professeur particulier espagnol"
+    ],
+    "courseName": "Cours particuliers d'espagnol en ligne",
+    "courseDescription": "Cours individuels d'espagnol en visio pour adultes francophones, avec un programme personnalisé, une correction en direct et un suivi entre les séances.",
+    "image": {
+      "url": "/img/og-cours-particuliers-espagnol-en-ligne.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cours particuliers d'espagnol en ligne avec Belén Payá"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Cours particuliers d'espagnol en ligne",
+        "path": "/cours-particuliers-espagnol-en-ligne/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#en-bref",
+      "#faq"
+    ],
+    "llms": "Format, déroulement, programmes (Primeros pasos, Sobremesa) et FAQ des cours particuliers d'espagnol en ligne.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "cours-conversation-espagnol/index.html",
+    "path": "/cours-conversation-espagnol/",
+    "type": "service",
+    "title": "Cours de conversation espagnol en ligne : débloque l'oral",
+    "description": "Tu comprends l'espagnol mais tu bloques à l'oral ? Cours de conversation en ligne (B1+) avec une prof native pour gagner en fluidité et en confiance.",
+    "keywords": [
+      "cours de conversation espagnol en ligne",
+      "débloquer l'oral en espagnol",
+      "parler espagnol couramment",
+      "conversation espagnol"
+    ],
+    "courseName": "Sobremesa · Cours de conversation espagnol en ligne",
+    "courseDescription": "Programme de conversation guidée en espagnol pour francophones de niveau B1 et plus : fluidité, expressions naturelles, correction en direct.",
+    "image": {
+      "url": "/img/og-cours-conversation-espagnol.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Cours de conversation espagnol en ligne"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Cours de conversation espagnol",
+        "path": "/cours-conversation-espagnol/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#en-bref",
+      "#faq"
+    ],
+    "llms": "Programme Sobremesa pour débloquer l'oral (B1+), méthode, atelier Apéro con nativos, FAQ.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "espagnol-couple-belle-famille/index.html",
+    "path": "/espagnol-couple-belle-famille/",
+    "type": "service",
+    "title": "Apprendre l'espagnol pour son conjoint et sa belle-famille",
+    "description": "Ton conjoint est hispanophone ? Apprends l'espagnol pour parler avec ta belle-famille et suivre les repas de famille. Cours en ligne avec Belén.",
+    "keywords": [
+      "apprendre l'espagnol pour son conjoint",
+      "parler espagnol avec sa belle-famille",
+      "conjoint espagnol",
+      "espagnol en couple"
+    ],
+    "courseName": "Espagnol en couple et en famille",
+    "courseDescription": "Cours d'espagnol en ligne pour les francophones en couple avec une personne hispanophone : langue familiale, expressions, humour et codes culturels.",
+    "image": {
+      "url": "/img/og-espagnol-couple-belle-famille.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Apprendre l'espagnol pour son conjoint et sa belle-famille"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Espagnol en couple et belle-famille",
+        "path": "/espagnol-couple-belle-famille/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#en-bref",
+      "#faq"
+    ],
+    "llms": "Cours pour conjoints de personnes hispanophones : parler avec la belle-famille, enfants bilingues, mariage.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "espagnol-pour-voyager/index.html",
+    "path": "/espagnol-pour-voyager/",
+    "type": "service",
+    "title": "Apprendre l'espagnol pour voyager · cours en ligne",
+    "description": "Apprends l'espagnol pour voyager en Espagne ou en Amérique latine : restaurant, hôtel, transports, santé. Cours en ligne avec une prof native.",
+    "keywords": [
+      "apprendre l'espagnol pour voyager",
+      "espagnol de voyage",
+      "cours d'espagnol avant un voyage",
+      "phrases espagnol voyage"
+    ],
+    "courseName": "Espagnol pour voyager",
+    "courseDescription": "Programme d'espagnol en ligne pour voyageurs francophones : situations pratiques, phrases clés et compréhension des accents.",
+    "image": {
+      "url": "/img/og-espagnol-pour-voyager.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Apprendre l'espagnol pour voyager"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Espagnol pour voyager",
+        "path": "/espagnol-pour-voyager/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#en-bref",
+      "#faq"
+    ],
+    "llms": "Préparer un voyage en espagnol : situations, phrases clés, délai conseillé avant le départ.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "espagnol-pour-vivre-en-espagne/index.html",
+    "path": "/espagnol-pour-vivre-en-espagne/",
+    "type": "service",
+    "title": "Espagnol pour vivre en Espagne : retraite et expatriation",
+    "description": "Tu t'installes en Espagne ou prépares ta retraite au soleil ? Apprends l'espagnol du quotidien : démarches, santé, logement. Cours en ligne.",
+    "keywords": [
+      "apprendre l'espagnol pour vivre en Espagne",
+      "espagnol retraite en Espagne",
+      "s'expatrier en Espagne espagnol",
+      "cours espagnol expatrié"
+    ],
+    "courseName": "Espagnol pour vivre en Espagne",
+    "courseDescription": "Cours d'espagnol en ligne pour futurs expatriés et retraités francophones : administration, santé, logement et vie sociale en Espagne.",
+    "image": {
+      "url": "/img/og-espagnol-pour-vivre-en-espagne.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Apprendre l'espagnol pour vivre en Espagne"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Espagnol pour vivre en Espagne",
+        "path": "/espagnol-pour-vivre-en-espagne/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#en-bref",
+      "#faq"
+    ],
+    "llms": "Espagnol pour s'installer ou prendre sa retraite en Espagne : démarches, santé, logement, vie sociale.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "blog/index.html",
+    "path": "/blog/",
+    "type": "collection",
+    "title": "Blog : apprendre l'espagnol quand on est francophone",
+    "description": "Faux amis, erreurs typiques des Français et conseils honnêtes pour apprendre l'espagnol. Le blog de Belén Payá, professeure d'espagnol native.",
+    "keywords": [
+      "apprendre l'espagnol",
+      "blog espagnol",
+      "conseils pour apprendre l'espagnol"
+    ],
+    "image": {
+      "url": "/img/og-blog-apprendre-espagnol.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Blog pour apprendre l'espagnol"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Blog",
+        "path": "/blog/"
+      }
+    ],
+    "llms": "Index des articles du blog.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "blog/faux-amis-espagnol-francais/index.html",
+    "path": "/blog/faux-amis-espagnol-francais/",
+    "type": "article",
+    "title": "Faux amis espagnol-français : 30 pièges à éviter",
+    "description": "Embarazada, constipado, éxito… Les 30 faux amis espagnol-français les plus fréquents, classés par situation, avec la bonne traduction.",
+    "keywords": [
+      "faux amis espagnol français",
+      "faux amis espagnol",
+      "embarazada",
+      "erreurs espagnol français"
+    ],
+    "image": {
+      "url": "/img/og-faux-amis-espagnol-francais.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Faux amis espagnol-français : 30 pièges à éviter"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Blog",
+        "path": "/blog/"
+      },
+      {
+        "name": "Faux amis espagnol-français",
+        "path": "/blog/faux-amis-espagnol-francais/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#resume",
+      "#faq"
+    ],
+    "llms": "Liste de 30 faux amis espagnol-français par thème, avec traduction correcte et méthode pour les retenir.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
+  },
+  {
+    "file": "blog/combien-de-temps-pour-apprendre-l-espagnol/index.html",
+    "path": "/blog/combien-de-temps-pour-apprendre-l-espagnol/",
+    "type": "article",
+    "title": "Combien de temps pour apprendre l'espagnol ? Réponse honnête",
+    "description": "Combien de temps faut-il à un francophone pour apprendre l'espagnol ? Durée par niveau (A1 à C1), facteurs clés et plan réaliste sur 3 mois.",
+    "keywords": [
+      "combien de temps pour apprendre l'espagnol",
+      "apprendre l'espagnol en 3 mois",
+      "niveau B1 espagnol",
+      "apprendre l'espagnol à 50 ans"
+    ],
+    "image": {
+      "url": "/img/og-combien-de-temps-apprendre-espagnol.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Combien de temps pour apprendre l'espagnol"
+    },
+    "breadcrumbs": [
+      {
+        "name": "Blog",
+        "path": "/blog/"
+      },
+      {
+        "name": "Combien de temps pour apprendre l'espagnol",
+        "path": "/blog/combien-de-temps-pour-apprendre-l-espagnol/"
+      }
+    ],
+    "faqSelector": "#faq details",
+    "speakable": [
+      "#resume",
+      "#faq"
+    ],
+    "llms": "Durée d'apprentissage de l'espagnol pour un francophone, niveau par niveau, avec les facteurs clés.",
+    "published": "2026-11-16",
+    "modified": "2026-11-16"
   }
 ]
