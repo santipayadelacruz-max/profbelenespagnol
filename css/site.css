@@ -658,3 +658,8 @@ label small { font-weight: 500; color: var(--gris); }
   .nav .has-sub:hover ul.submenu { display: none; }
   .nav .has-sub.open:hover ul.submenu { display: grid; }
 }
+/* Héros des pages : la bulle et l'étiquette ne recouvrent plus l'image */
+.ph-visual { display: grid; justify-items: start; padding-top: 22px; }
+.ph-visual .chat { position: relative; left: auto; bottom: auto; margin: -26px 0 0 -18px; max-width: 280px; z-index: 2; }
+.ph-visual .sticker { top: -4px; right: -18px; z-index: 2; }
+@media (max-width: 900px) { .ph-visual .chat { margin-left: -6px; } .ph-visual .sticker { right: -6px; } }
